@@ -527,8 +527,8 @@ void Trainer::exponential_moving_average(float beta, unsigned update_freq)
 
 void Trainer::cumulative_moving_average(unsigned update_freq)
 {
-    if (updates > 0)
-        DYNET_RUNTIME_ERR("This function must be called before any update");
+    //if (updates > 0)
+    //    DYNET_RUNTIME_ERR("This function must be called before any update");
     if (update_freq == 0u)
         DYNET_RUNTIME_ERR("The update frequency cannot be null");
 
